@@ -3,14 +3,14 @@ package layer;
 /**
  * Created by amigo on 10/11/2016.
  */
-public class ConvolutionalLayer {
+public class ConvolutionalLayer extends NeuralNetworkLayer {
 
-    private int inputHeight;
-    private int inputWidth;
-    private int inputDepth;
-    private int kernelWidth;
-    private int kernelHeight;
-    private int kernelNumber;
+    public int inputHeight;
+    public int inputWidth;
+    public int inputDepth;
+    public int kernelWidth;
+    public int kernelHeight;
+    public int kernelNumber;
 
     // filter number, depth, width, height
     private double[][][][] kernels;
@@ -19,51 +19,5 @@ public class ConvolutionalLayer {
         kernels = new double[kernelNumber][inputDepth][kernelWidth][kernelHeight];
     }
 
-    public int getInputHeight() {
-        return inputHeight;
-    }
 
-    public void setInputHeight(int inputHeight) {
-        this.inputHeight = inputHeight;
-    }
-
-    public int getInputWidth() {
-        return inputWidth;
-    }
-
-    public void setInputWidth(int inputWidth) {
-        this.inputWidth = inputWidth;
-    }
-
-    public int getInputDepth() {
-        return inputDepth;
-    }
-
-    public void setInputDepth(int inputDepth) {
-        this.inputDepth = inputDepth;
-    }
-
-    public int getKernelWidth() {
-        return kernelWidth;
-    }
-
-    public void setKernelWidth(int kernelWidth) {
-        this.kernelWidth = kernelWidth;
-    }
-
-    public int getKernelHeight() {
-        return kernelHeight;
-    }
-
-    public void setKernelHeight(int kernelHeight) {
-        this.kernelHeight = kernelHeight;
-    }
-
-    public int getKernelNumber() {
-        return kernelNumber;
-    }
-
-    public void setKernelNumber(int kernelNumber) {
-        this.kernelNumber = kernelNumber;
-    }
 }
