@@ -13,8 +13,8 @@ import java.util.List;
  *
  */
 public class NeuralNetwork {
-    private List<NeuralNetworkLayerConfig> layerConfigs = new ArrayList<>();
-    private List<NeuralNetworkLayer> layers = new ArrayList<NeuralNetworkLayer>();
+    public List<NeuralNetworkLayerConfig> layerConfigs = new ArrayList<>();
+    public List<NeuralNetworkLayer> layers = new ArrayList<>();
 
     public void learn(double[][][] x, double[] d) {
 
